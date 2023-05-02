@@ -193,3 +193,42 @@ h2 {
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
 }
+
+ /*    Your CSS styles go here    */
+      body {
+        background: #D3D3D3;
+        font-family: 'Courier New', monospace;
+      }
+      
+      h1 {
+        font-family: Arial;
+      }
+      
+      h1:hover{
+        text-decoration: underline;
+        cursor: help;
+        
+      }
+
+      .mydiv {
+        width: 300px;
+        height: 200px;
+        position: fixed;
+        top: 200px;
+        right: 40%;
+        background: conic-gradient(tomato, lightyellow, lightgreen, lightblue);
+        border: solid purple 10px;
+        cursor: pointer;
+      }
+      
+      
+    /*      Classes to help change things in Javascript  */
+       .bigger {
+        width: 100%;
+      }
+
+      .hidden {
+        display: none;
+      }
+      
+
