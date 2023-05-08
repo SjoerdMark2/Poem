@@ -35,7 +35,31 @@
         display: none;
       }
 
-/* Style links */
 
-a
+.littlelink {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 10px;
+}
+/* unvisited link */
+a, a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
       
