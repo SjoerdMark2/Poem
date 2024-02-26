@@ -1,65 +1,23 @@
-/*    Your CSS styles go here    */
-      body {
-        background: #D3D3D3;
-        font-family: 'Courier New', monospace;
-      }
-      
-      h1 {
-        font-family: Arial;
-      }
-      
-      h1:hover{
-        text-decoration: underline;
-        cursor: help;
-        
+body {
+        font-family: monospace;
       }
 
-      .mydiv {
-        width: 300px;
-        height: 200px;
-        position: fixed;
-        top: 200px;
-        right: 40%;
-        background: conic-gradient(tomato, lightyellow, lightgreen, lightblue);
-        border: solid purple 10px;
-        cursor: pointer;
-      }
-      
-      
-    /*      Classes to help change things in Javascript  */
-       .bigger {
-        width: 100%;
+      /* unvisited link */
+      a:link {
+        color: red;
       }
 
-      .hidden {
-        display: none;
+      /* visited link */
+      a:visited {
+        color: green;
       }
 
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
 
-.littlelink {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  font-size: 10px;
-}
-/* unvisited link */
-a, a:link {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-} 
-      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
