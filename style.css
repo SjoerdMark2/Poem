@@ -12,4 +12,25 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: help;
+}
+
+.yellow {
+  background: yellow;
+  padding: 10px;
+  transition: 1s;
+}
+
+body.dark {
+  background: purple;
+  color: white;
+}
+
+body.dark #square {
+  background: lightblue;
+}
+
+body.dark .yellow {
+  background: tomato;
+  padding: 50px;
 }

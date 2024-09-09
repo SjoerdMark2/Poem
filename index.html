@@ -5,8 +5,13 @@
 
     <title>Give your page a title!</title>
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <!-- Import the webpage's external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /*    Internal stylesheet    */
+      /*    Whatever works for you */
+    </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -16,14 +21,17 @@
     <h1>🀨 Boilerplate / Basic HTML package 📙</h1>
 
     <p>Start editing!</p>
-    
-    
-    <div id="square"></div>
+
+    <p class="yellow">If you still remember how...</p>
+
+    <div id="square" onclick="myFunction()"></div>
 
     <!--  End of page contents  -->
 
-    <!--  Link to Javacript file  -->
-    <!--      <script src="scripts.js"></script>  -->
-    
+    <!--  Link to external Javacript file  -->
+         <script src="scripts.js"></script> 
+
+    <!--   Or, aternatively, write it directly on this page   -->
+    <script></script>
   </body>
 </html>

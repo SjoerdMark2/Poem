@@ -2,5 +2,5 @@
       
       function myFunction() {
         console.log("this is your console!");
-        document.body.style.backgroundColor = 'tomato'
+        document.body.classList.toggle("dark")
       }
