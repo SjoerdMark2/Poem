@@ -20,17 +20,3 @@ body {
   padding: 10px;
   transition: 1s;
 }
-
-body.dark {
-  background: purple;
-  color: white;
-}
-
-body.dark #square {
-  background: lightblue;
-}
-
-body.dark .yellow {
-  background: tomato;
-  padding: 50px;
-}
