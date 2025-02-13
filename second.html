@@ -7,13 +7,25 @@
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
+
     <style>
       body {
         background: gold;
       }
+
+      #mydiv {
+        background: red;
+        width: 200px;
+        height: 100px;
+        transition: 2s;
+        padding: 20px;
+      }
+
+      #mydiv:hover {
+        background: blue;
+        color: white;
+      }
     </style>
-    
   </head>
 
   <body>
@@ -22,9 +34,9 @@
 
     <p>Start editing!</p>
 
-    <div id="mydiv"></div>
-    
-   
+    <a href="#">
+      <div id="mydiv">Another link</div>
+    </a>
 
     <!--  End of page contents  -->
 
