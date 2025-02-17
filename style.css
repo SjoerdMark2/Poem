@@ -1,15 +1,15 @@
 body {
   font-family: monospace;
-  background-image: url("https://cdn.glitch.global/abf81d9e-7e7c-433c-bbe5-6efa062741ce/elleboogverband_1.jpg?v=1739788297393");
+  background-image: url("https://cdn.glitch.global/abf81d9e-7e7c-433c-bbe5-6efa062741ce/Asset%201.png?v=1739789328777");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  color: #D5CFCF;
+  color: #525257;
 }
 
 .yellow {
-  background: #525257;
+  background: #D5CFCF;
   padding: 10px;
   transition: 1s;
 }
