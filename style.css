@@ -1,11 +1,12 @@
 body {
   font-family: monospace;
-  background: lightblue;
+  background: white;
   height: 100vh;
+  
 }
 
 #square {
-  background: red;
+  background: #525257;
   width: 100px;
   height: 100px;
   position: fixed;
@@ -16,7 +17,7 @@ body {
 }
 
 .yellow {
-  background: yellow;
+  background: #525257;
   padding: 10px;
   transition: 1s;
 }
