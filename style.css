@@ -1,8 +1,11 @@
 body {
   font-family: monospace;
-  background: white;
+  background-image: url("https://cdn.glitch.global/abf81d9e-7e7c-433c-bbe5-6efa062741ce/Elleboogverband.jpg?v=1739787687490");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
-  color:#D5CFCF;
+  color: #D5CFCF;
 }
 
 #square {
