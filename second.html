@@ -19,7 +19,8 @@
         justify-content: center; 
         align-items: center;
       }
-      
+
+     
       #mydiv {
         background: White;
         width: 175px;
@@ -29,7 +30,7 @@
         text-align: center;
         cursor: pointer;
         position: absolute;
-        animation: randomMovement 15s infinite;
+        animation: randomMovement 15s infinite; 
       }
 
       #mydiv:hover {
@@ -41,9 +42,11 @@
         text-decoration: none;
       }
 
-      a:hover {
+       a:hover {
         color: lightgray;
       }
+
+     
       @keyframes randomMovement {
         0% {
           top: 0%;
@@ -76,23 +79,30 @@
   </head>
 
   <body>
+    
     <a href="javascript:void(0);" onclick="createSquares()">
       <div id="mydiv">The End of The Sidewalk</div>
     </a>
 
-    
     <script>
-        const numberOfSquares = 100;
       
+      function createSquares() {
+       
+        const numberOfSquares = 100;
+
+       
         for (let i = 0; i < numberOfSquares; i++) {
           const square = document.createElement('div');
           square.classList.add('square');
-          const top = Math.random() * (window.innerHeight - 50);
+
+         
+          const top = Math.random() * (window.innerHeight - 50);  
           const left = Math.random() * (window.innerWidth - 50); 
+
           square.style.top = `${top}px`;
           square.style.left = `${left}px`;
 
-          // Append the square to the body
+          
           document.body.appendChild(square);
         }
       }
