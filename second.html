@@ -10,37 +10,46 @@
 
     <style>
       body {
-        background: gold;
-        font-family: Arial, sans-serif;
-        overflow: hidden; /* Prevents scrolling */
+        background: White;
+        font-family: Monospace;
+        overflow: hidden; 
         margin: 0;
         padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
       }
 
       #mydiv {
-        background: red;
+        background: Grey;
         width: 200px;
         height: 100px;
         transition: 2s;
         padding: 20px;
-        margin-top: 20px;
         text-align: center;
         cursor: pointer;
       }
 
       #mydiv:hover {
-        background: blue;
+        background: Gold;
         color: white;
       }
 
-      /* Square styling - make them twice as big */
       .square {
         position: absolute;
-        width: 100px;  /* Increased size */
-        height: 100px; /* Increased size */
-        background-color: grey;
-        animation: moveAround 2s linear infinite, randomMovement 1s linear infinite; /* Chaotic movement and rotation */
+        width: 150px;  
+        height: 150px;
+        background-color: Grey;
+        animation: randomMovement 5s infinite;
       }
+      
+      .square {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: Grey;
+        animation: randomMovement 1s infinite;
 
       /* Rotation animation */
       @keyframes moveAround {
@@ -79,10 +88,6 @@
   </head>
 
   <body>
-    <!-- Page contents go here -->
-    <h1>🀨 A PLACE WHERE THE SIDEWALK ENDS 📙</h1>
-
-    <!-- Link to trigger the appearance of squares -->
     <a href="javascript:void(0);" onclick="createSquares()">
       <div id="mydiv">The End of The Sidewalk</div>
     </a>

@@ -6,16 +6,16 @@ body {
   background-position: center;
   height: 100vh;
   color: #525257;
-  animation: backgroundAnimation 5s linear infinite; /* Faster animation */
+  animation: backgroundAnimation 5s linear infinite;
 }
 
-/* Define the keyframes for downward animation */
+
 @keyframes backgroundAnimation {
   0% {
-    background-position: center top; /* Start at the top */
+    background-position: center top; 
   }
   100% {
-    background-position: center bottom; /* End at the bottom */
+    background-position: center bottom; 
   }
 }
 
