@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Another Page with Animated Squares</title>
+    <title>Another Page with Static Squares</title>
 
     <link rel="stylesheet" href="/style.css" />
 
@@ -28,4 +28,88 @@
         transition: 2s;
         padding: 20px;
         text-align: center;
-  
+        cursor: pointer;
+        position: absolute;
+        animation: randomMovement 15s infinite; /* The movement of mydiv */
+      }
+
+      #mydiv:hover {
+        background: Gold;
+        color: white;
+      }
+
+      /* Apply the link color to white */
+      a {
+        color: white;
+        text-decoration: none; /* Removes underline */
+      }
+
+      a:hover {
+        color: lightgray; /* Optional: changes the color on hover */
+      }
+
+      /* Random movement animation for #mydiv */
+      @keyframes randomMovement {
+        0% {
+          top: 0%;
+          left: 0%;
+        }
+        25% {
+          top: 80%;
+          left: 5%;
+        }
+        50% {
+          top: 20%;
+          left: 80%;
+        }
+        75% {
+          top: 75%;
+          left: 15%;
+        }
+        100% {
+          top: 60%;
+          left: 60%;
+        }
+      }
+
+      /* Styling for the squares that will appear */
+      .square {
+        position: absolute;
+        width: 175px;  /* Reduced size for visibility */
+        height: 175px; /* Reduced size for visibility */
+        background-color: Grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The link wrapping the div that moves -->
+    <a href="javascript:void(0);" onclick="createSquares()">
+      <div id="mydiv">The End of The Sidewalk</div>
+    </a>
+
+    <script>
+      // Function to create squares dynamically when the link is clicked
+      function createSquares() {
+        // Number of squares to create
+        const numberOfSquares = 100;
+
+        // Loop to create the squares
+        for (let i = 0; i < numberOfSquares; i++) {
+          const square = document.createElement('div');
+          square.classList.add('square');
+
+          // Random position for each square (ensuring it stays within the screen bounds)
+          const top = Math.random() * (window.innerHeight - 50);  // Random top percentage (0-100)
+          const left = Math.random() * (window.innerWidth - 50); // Random left percentage (0-100)
+
+          square.style.top = `${top}px`;
+          square.style.left = `${left}px`;
+
+          // Append the square to the body
+          document.body.appendChild(square);
+        }
+      }
+    </script>
+  </body>
+</html>
