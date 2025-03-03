@@ -20,7 +20,6 @@
         align-items: center;
       }
 
-     
       #mydiv {
         background: White;
         width: 175px;
@@ -37,16 +36,16 @@
         background: Gold;
         color: white;
       }
+
       a {
         color: white;
         text-decoration: none;
       }
 
-       a:hover {
+      a:hover {
         color: lightgray;
       }
 
-     
       @keyframes randomMovement {
         0% {
           top: 0%;
@@ -69,11 +68,13 @@
           left: 60%;
         }
       }
+
       .square {
         position: absolute;
         width: 175px;  
         height: 175px; 
-        background-color: Grey;
+        background-color: white;
+        border: 2px solid grey; /* White border added here */
       }
     </style>
   </head>
@@ -85,24 +86,19 @@
     </a>
 
     <script>
-      
       function createSquares() {
-       
         const numberOfSquares = 100;
 
-       
         for (let i = 0; i < numberOfSquares; i++) {
           const square = document.createElement('div');
           square.classList.add('square');
 
-         
           const top = Math.random() * (window.innerHeight - 50);  
           const left = Math.random() * (window.innerWidth - 50); 
 
           square.style.top = `${top}px`;
           square.style.left = `${left}px`;
 
-          
           document.body.appendChild(square);
         }
       }
