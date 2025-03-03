@@ -19,8 +19,7 @@
         justify-content: center; 
         align-items: center;
       }
-
-      /* Styling for the link and surrounding div */
+      
       #mydiv {
         background: White;
         width: 175px;
@@ -30,25 +29,21 @@
         text-align: center;
         cursor: pointer;
         position: absolute;
-        animation: randomMovement 15s infinite; /* The movement of mydiv */
+        animation: randomMovement 15s infinite;
       }
 
       #mydiv:hover {
         background: Gold;
         color: white;
       }
-
-      /* Apply the link color to white */
       a {
         color: white;
-        text-decoration: none; /* Removes underline */
+        text-decoration: none;
       }
 
       a:hover {
-        color: lightgray; /* Optional: changes the color on hover */
+        color: lightgray;
       }
-
-      /* Random movement animation for #mydiv */
       @keyframes randomMovement {
         0% {
           top: 0%;
@@ -71,38 +66,29 @@
           left: 60%;
         }
       }
-
-      /* Styling for the squares that will appear */
       .square {
         position: absolute;
-        width: 175px;  /* Reduced size for visibility */
-        height: 175px; /* Reduced size for visibility */
+        width: 175px;  
+        height: 175px; 
         background-color: Grey;
       }
     </style>
   </head>
 
   <body>
-    <!-- The link wrapping the div that moves -->
     <a href="javascript:void(0);" onclick="createSquares()">
       <div id="mydiv">The End of The Sidewalk</div>
     </a>
 
+    
     <script>
-      // Function to create squares dynamically when the link is clicked
-      function createSquares() {
-        // Number of squares to create
         const numberOfSquares = 100;
-
-        // Loop to create the squares
+      
         for (let i = 0; i < numberOfSquares; i++) {
           const square = document.createElement('div');
           square.classList.add('square');
-
-          // Random position for each square (ensuring it stays within the screen bounds)
-          const top = Math.random() * (window.innerHeight - 50);  // Random top percentage (0-100)
-          const left = Math.random() * (window.innerWidth - 50); // Random left percentage (0-100)
-
+          const top = Math.random() * (window.innerHeight - 50);
+          const left = Math.random() * (window.innerWidth - 50); 
           square.style.top = `${top}px`;
           square.style.left = `${left}px`;
 
