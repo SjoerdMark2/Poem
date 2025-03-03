@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="/style.css" />
 
     <style>
+      /* Set the color of all links to white */
+      a {
+        color: white;
+        text-decoration: none; /* Removes the underline */
+      }
+
+      /* Optional: You can add hover effects if you want */
+      a:hover {
+        color: lightgray; /* Changes color to light gray on hover */
+      }
+    </style>
       body {
         background: White;
         font-family: Monospace;
@@ -22,9 +33,9 @@
       }
 
       #mydiv {
-        background: Grey;
-        width: 200px;
-        height: 100px;
+        background: White;
+        width: 175px;
+        height: 175px;
         transition: 2s;
         padding: 20px;
         text-align: center;
@@ -38,16 +49,16 @@
 
       .square {
         position: absolute;
-        width: 150px;  
-        height: 150px;
+        width: 175px;  
+        height: 175px;
         background-color: Grey;
         animation: randomMovement 5s infinite;
       }
       
       .square {
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
         background-color: Grey;
         animation: randomMovement 1s infinite;
 
@@ -95,12 +106,12 @@
       // Function to create squares dynamically when the link is clicked
       function createSquares() {
         // Number of squares to create
-        const numberOfSquares = 50;
+        const numberOfSquares = 100;
 
         // Loop to create the squares
         for (let i = 0; i < numberOfSquares; i++) {
-          const square = document.createElement('div'); // Create a new div element
-          square.classList.add('square'); // Add the 'square' class to the div
+          const square = document.createElement('div');
+          square.classList.add('square');
 
           // Random position for each square
           const top = Math.random() * 100;  // Random top percentage (0-100)
