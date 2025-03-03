@@ -5,21 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Another Page with Animated Squares</title>
 
-    
     <link rel="stylesheet" href="/style.css" />
 
     <style>
-      /* Set the color of all links to white */
-      a {
-        color: white;
-        text-decoration: none; /* Removes the underline */
-      }
-
-      /* Optional: You can add hover effects if you want */
-      a:hover {
-        color: lightgray; /* Changes color to light gray on hover */
-      }
-    </style>
       body {
         background: White;
         font-family: Monospace;
@@ -32,6 +20,7 @@
         align-items: center;
       }
 
+      /* Styling for the link and surrounding div */
       #mydiv {
         background: White;
         width: 175px;
@@ -39,91 +28,4 @@
         transition: 2s;
         padding: 20px;
         text-align: center;
-        cursor: pointer;
-      }
-
-      #mydiv:hover {
-        background: Gold;
-        color: white;
-      }
-
-      .square {
-        position: absolute;
-        width: 175px;  
-        height: 175px;
-        background-color: Grey;
-        animation: randomMovement 5s infinite;
-      }
-      
-      .square {
-        position: absolute;
-        width: 175px;
-        height: 175px;
-        background-color: Grey;
-        animation: randomMovement 1s infinite;
-
-      @keyframes moveAround {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-        
-      @keyframes randomMovement {
-        0% {
-          top: 0%;
-          left: 0%;
-        }
-        25% {
-          top: 80%;
-          left: 5%;
-        }
-        50% {
-          top: 20%;
-          left: 80%;
-        }
-        75% {
-          top: 75%;
-          left: 15%;
-        }
-        100% {
-          top: 60%;
-          left: 60%;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <a href="javascript:void(0);" onclick="createSquares()">
-      <div id="mydiv">The End of The Sidewalk</div>
-    </a>
-
-
-    <script>
-      // Function to create squares dynamically when the link is clicked
-      function createSquares() {
-        // Number of squares to create
-        const numberOfSquares = 100;
-
-        // Loop to create the squares
-        for (let i = 0; i < numberOfSquares; i++) {
-          const square = document.createElement('div');
-          square.classList.add('square');
-
-          // Random position for each square
-          const top = Math.random() * 100;  // Random top percentage (0-100)
-          const left = Math.random() * 100; // Random left percentage (0-100)
-
-          square.style.top = `${top}%`;
-          square.style.left = `${left}%`;
-
-          // Append the square to the body
-          document.body.appendChild(square);
-        }
-      }
-    </script>
-  </body>
-</html>
+  
